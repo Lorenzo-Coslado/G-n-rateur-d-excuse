@@ -1,0 +1,144 @@
+body {
+    background-color: #6b6969;
+    font-family: Arial, sans-serif;
+    color : #fff;
+}
+
+h1 {
+  color: #5adaff
+}
+
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.BigContainer {
+  padding: 10px 20px;
+  background-color: #40434d;
+  border-radius: 20px;
+  width: 50%;
+  height: 500px;
+  transition: border 2s ease;
+}
+
+.BigContainer:hover {
+animation: shadow1 1s ease 0s forwards, shadow2 1s ease 0.2s forwards, shadow3 1s ease 0.4s forwards, shadow4 1s ease 0.6s forwards, shadow5 1s ease 0.8s forwards;
+border: 1px solid rgba(84, 104, 255, 0.4);
+transition: border 3s ease;
+}
+
+.BigContainer:not(:hover) {
+  animation: shadowOut 1s ease forwards;
+  box-shadow: none;
+}
+
+@keyframes shadowOut {
+  from {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px;
+    border: 1px solid rgba(84, 104, 255, 0.4);
+  }
+  to {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@keyframes shadow1 {
+  to {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px;
+  }
+}
+
+@keyframes shadow2 {
+  to {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px;
+  }
+}
+
+@keyframes shadow3 {
+  to {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px;
+  }
+}
+
+@keyframes shadow4 {
+  to {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px;
+  }
+}
+
+@keyframes shadow5 {
+  to {
+    box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px, rgba(84, 104, 255, 0.05) -25px 25px;
+  }
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.subButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, rgb(84, 104, 255) 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.subButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.subButton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.subButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.newExcuse {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  width: 250px;
+}

@@ -1,0 +1,44 @@
+nav {
+  background-color: rgb(29, 26, 26);
+  border-radius: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:  40px;
+}
+  
+.Liens a {
+  color: #fff;
+  padding: 10px;
+  background-color: #5468ff;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: bold;
+  transition: color 0.7s ease, background-color 0.7s ease;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+.Liens a:hover {
+  color: #5468ff;
+  background-color: #fff;
+  transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+.Logo_lorenzo {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.5s ease;
+}
+
+.Logo_lorenzo:hover {
+  transform: rotate(-25deg);
+  transition: transform 0.5s ease;
+}

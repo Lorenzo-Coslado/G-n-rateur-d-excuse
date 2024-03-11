@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajout d'excuses créatives</title>
+  <link rel="stylesheet" href="style/stylenav.css">
+  <link rel="stylesheet" href="style/stylehome.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("#navbar").load("navbar/navbar.html"); 
+    });
+    </script>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div class="center-container">
+    <div class="BigContainer">
+      <h1>Nouvelle Excuse</h1>
+      <p>Veuillez choisir votre thématique pour ajouter une excuse.</p>
+      <form id="formulaireAjoutExcuse" action="ajout.php" method="post" onsubmit="return validateExcuse()">
+        <select name="thématique" id="thématique">
+          <option value="1">Retard</option>
+          <option value="2">Devoir non fait</option>
+          <option value="3">Panne de réveil</option>
+          <option value="4">Flemme</option>
+          <option value="5">Oubli</option>
+        </select>
+        <input type="text" class="newExcuse" id="newExcuse" name="newExcuse" placeholder="Ecrivez votre nouvelle excuse">
+        <input class="subButton" type="submit">
+      </form>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="js/ajout.js"></script>
+</body>
+</html>

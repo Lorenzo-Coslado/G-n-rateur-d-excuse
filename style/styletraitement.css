@@ -1,0 +1,77 @@
+body {
+  background-color: #6b6969;
+  font-family: Arial, sans-serif;
+  color : #fff;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:600;
+}
+
+.BigContainer {
+  padding: 10px 20px;
+  background-color: #40434d;
+  border-radius: 20px;
+  width: 50%;
+  height: 250px;
+  transition: border 2s ease;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.BigContainer:hover {
+  animation: shadow1 1s ease 0s forwards, shadow2 1s ease 0.2s forwards, shadow3 1s ease 0.4s forwards, shadow4 1s ease 0.6s forwards, shadow5 1s ease 0.8s forwards;
+  border: 1px solid rgba(84, 104, 255, 0.4);
+  transition: border 3s ease;
+  }
+  
+  .BigContainer:not(:hover) {
+    animation: shadowOut 1s ease forwards;
+    box-shadow: none;
+  }
+  
+  @keyframes shadowOut {
+    from {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px;
+      border: 1px solid rgba(84, 104, 255, 0.4);
+    }
+    to {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  
+  @keyframes shadow1 {
+    to {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px;
+    }
+  }
+  
+  @keyframes shadow2 {
+    to {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px;
+    }
+  }
+  
+  @keyframes shadow3 {
+    to {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px;
+    }
+  }
+  
+  @keyframes shadow4 {
+    to {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px;
+    }
+  }
+  
+  @keyframes shadow5 {
+    to {
+      box-shadow: rgba(84, 104, 255, 0.4) -5px 5px, rgba(84, 104, 255, 0.3) -10px 10px, rgba(84, 104, 255, 0.2) -15px 15px, rgba(84, 104, 255, 0.1) -20px 20px, rgba(84, 104, 255, 0.05) -25px 25px;
+    }
+  }
