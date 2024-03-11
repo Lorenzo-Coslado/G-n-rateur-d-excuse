@@ -41,7 +41,9 @@ $result = $querry->get_result();
 $arr = $result->fetch_assoc();
 
 // Affiche l'excuse aléatoire
-echo '<div class="center-container"> <div class="BigContainer"> '. $arr["excuse"] .' </div> </div>';
+echo '<div class="center-container"> <div class="BigContainer"> '. $arr["excuse"] .'<button class="copyButton" data-clipboard-text="' . $arr['excuse'] . '<br> ">Copier</button> </div> </div>';
 
+echo '<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>';
+echo '<script>new Clipboard(".copyButton")</script>';
 ?>
 
